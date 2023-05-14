@@ -1,0 +1,9 @@
+.overlayPane{
+  width:100%;
+  height: 100%;
+  background:#fff5e2;
+  z-index: 1000;
+  border: solid 2px black;
+  border-radius: 5px;
+  position: absolute;
+}
