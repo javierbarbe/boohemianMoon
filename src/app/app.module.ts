@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { LoadingComponent } from './loading/loading.component';
+import { LoginComponent } from './pages/login/login.component';
+import { LoadingComponent } from './shared/components/loading/loading.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { CargandoInterceptor } from './shared/interceptors/cargando.interceptor';
 import { MainComponent } from './pages/main/main.component';
