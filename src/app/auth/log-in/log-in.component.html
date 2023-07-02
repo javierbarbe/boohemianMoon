@@ -1,1 +1,35 @@
-<p>log-in works!</p>
+<div class="container d-flex align-items-center  justify-content-center" style="height: 95vh;">
+
+<div class="row w-100">
+  <div class="m-auto col col-sm-8 col-m-4 p-2 ">
+    <body class="  py-4 bg-body-tertiary" style="border: solid 2px red;">
+    <main class="form-signin w-100 m-auto p-2">
+    <form [formGroup]="miForm" (ngSubmit)="login()">
+      <img class="mb-4" src="" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <div class="form-floating">
+        <input type="email" class="form-control mb-2" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control mb-2" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+
+
+      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
+    </form>
+    </main>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+
+    </body>
+
+  </div>
+
+</div>
+</div>
+

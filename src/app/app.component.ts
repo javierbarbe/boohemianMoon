@@ -1,4 +1,4 @@
-import { LoginServiceService } from './shared/services/login-service.service';
+import { AuthService } from './auth/services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   showLoad:boolean = false;
-  constructor(private LoginServiceService: LoginServiceService){
+  constructor(private LoginServiceService: AuthService){
     this.LoginServiceService.isLoading$.subscribe(showLoading=> {
       this.showLoad = showLoading;
     })

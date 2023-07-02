@@ -10,6 +10,7 @@ import { CargandoInterceptor } from './shared/interceptors/cargando.interceptor'
 import { MainComponent } from './pages/main/main.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { CarruselComponent } from './shared/components/carrusel/carrusel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CarruselComponent } from './shared/components/carrusel/carrusel.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
  providers: [
     CargandoInterceptor,

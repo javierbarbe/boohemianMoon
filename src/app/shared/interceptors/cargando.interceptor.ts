@@ -1,4 +1,4 @@
-import { LoginServiceService } from './../services/login-service.service';
+import { AuthService } from '../../auth/services/auth.service';
 import { Injectable } from '@angular/core';
 import { mergeMap, delay, takeUntil, finalize  } from 'rxjs/operators'
 import {
@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class CargandoInterceptor implements HttpInterceptor {
 
-  constructor(private loginService:LoginServiceService) {}
+  constructor(private loginService:AuthService) {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
 

@@ -11,8 +11,8 @@ const routes: Routes = [
     children:[
       { path:"login" , component:LogInComponent },
       { path:"register" , component:RegisterComponent },
+      { path:"**" , redirectTo:"login" },
     ] },
-  { path:"**" , redirectTo:"" },
 ];
 
 @NgModule({

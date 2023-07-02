@@ -43,16 +43,7 @@ export class CarruselComponent implements OnInit {
     myCarousel!.removeAttribute("data-bs-interval")
     myCarousel!.removeAttribute("data-bs-ride")
     console.log(myCarousel)
-    // ca?.setattribute("data-interval","false");
-    // const carrusel = new bootstrap.Carousel(carruselote, {
-    //   interval: false,
-    //   ride: false,
-    // })
-    // carrusel.pause();
-    // console.log(this.carouselParable._config)
-    // this.carouselParable._config.interval = false;
-    // this.carouselParable.ride = false;
-    // console.log(this.carouselParable)
+
 
   }
   start() {

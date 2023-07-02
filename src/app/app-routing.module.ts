@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './pages/main/main.component';
+import { NotFound404Component } from './pages/not-found404/not-found404.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: "",
     loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+  },
+  {
+    path: "**",
+    component:NotFound404Component
   },
 ];
 

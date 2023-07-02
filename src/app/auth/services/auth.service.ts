@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ReplaySubject, catchError, debounceTime, of } from 'rxjs';
+import { Observable, ReplaySubject, catchError, debounceTime, of } from 'rxjs';
+import { User } from '../models/user.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class LoginServiceService {
+export class AuthService {
 
   private _isLoading:boolean = false;
   isLoading$:ReplaySubject<boolean> = new ReplaySubject();
@@ -33,6 +34,13 @@ export class LoginServiceService {
   hideLoading(){
     this._isLoading = false;
     this.isLoading$.next(this._isLoading);
+  }
+
+  login(email:string, pass:string):Observable<User| boolean>{
+    if(email.includes("javi") && pass.includes("123")){
+      return of( {nombreUsuario:'Javi', email, id:'sdadasdasdas12.srr134rf.Ssadsd' })
+    }
+    else return of(false);
   }
 
 

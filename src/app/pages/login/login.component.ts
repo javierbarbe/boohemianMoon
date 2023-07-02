@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoginServiceService } from '../../shared/services/login-service.service';
+import { AuthService } from '../../auth/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +8,7 @@ import { LoginServiceService } from '../../shared/services/login-service.service
 })
 export class LoginComponent {
 
-constructor(private loginService:LoginServiceService){}
+constructor(private loginService:AuthService){}
   showLoading(){
     this.loginService.callhttp().subscribe(res=> {
       console.log("respuesta de suscripcion",res)
